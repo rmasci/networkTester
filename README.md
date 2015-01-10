@@ -20,7 +20,7 @@ NetworkTest will not daemonize so if you want to fire and forget and leave it ru
 
 At this point you could use a web server and hit the networkTest test page from the command line it would look like this:
 	
-	curl http://<networkTester IP>/
+	curl http://[networkTester IP]/
 	HTTP 1.1/ 200 OK
 	Date: 1/10/2015 09:36:51pm
 	From: 172.16.1.45:57327
@@ -59,7 +59,7 @@ Again the program doesn't daemonize so if you want to fire and forget to leave i
 	nohup networkTester -c -a 10.100.1.15 -p 8080 -L /tmp/networkTest.log &
 
 For some odd reason I needed the ability to generate HTML data for a database functionality so networkTester also has the ability of spitting out 
-random HTML by accessing the url: http://<networkTest IP>/dbGen
+random HTML by accessing the url: http://[networkTest IP]/dbgen
 
 	Data Testing docker02
 	
